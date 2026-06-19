@@ -1,6 +1,5 @@
 [
-    {"DNI": 45871236,"Nombres": "Carlos Alberto","Apellidos": "Mendoza Ruiz","Direccion": "Av. Los Olivos 1236","Razon Social": "Comercial Andina SAC","RUC": 20123456781},
-    {"DNI": 47125896,"Nombres": "María Elena","Apellidos": "Torres Paredes","Direccion": "San Martín 456","Razon Social": "Servicios Integrales del Sur SAC","RUC": 20456789123},
-    {"DNI": 48956321,"Nombres": "José Luis","Apellidos": "García","Direccion": "Las Flores 789","Razon Social": "Distribuidora Norte EIRL","RUC": 20678912345}
-
+    {"dni": 45871236,"nombres": "Carlos Alberto","apellidos": "Mendoza Ruiz","direccion": "Av. Los Olivos 1236","razon_social": "Comercial Andina SAC","ruc": 20123456781},
+    {"dni": 47125896,"nombres": "María Elena","apellidos": "Torres Paredes","direccion": "San Martín 456","razon_social": "Servicios Integrales del Sur SAC","ruc": 20456789123},
+    {"dni": 48956321,"nombres": "José Luis","apellidos": "García","direccion": "Las Flores 789","razon_social": "Distribuidora Norte EIRL","ruc": 20678912345}
 ]
