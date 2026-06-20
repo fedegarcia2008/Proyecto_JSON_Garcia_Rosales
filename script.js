@@ -5,7 +5,10 @@ fetch('pasajero.json')
 .then((datos) => {
     let salida = "";
     datos.forEach(pas => {
-        salida += `<p>Nombre: ${pas.P001.nombre}</p>`;
+        salida += `
+                    <p>DNI: ${pas.P1.dni}</p>
+                    <p>Nombre: ${pas.P1.nom}</p>
+                    <p>Apellido: ${pas.P1.ape}</p>`;
     });
     document.getElementById("result_pas").innerHTML = salida;
 })
