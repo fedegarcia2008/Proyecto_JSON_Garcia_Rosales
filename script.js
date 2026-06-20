@@ -5,7 +5,7 @@ fetch('pasajero.json')
 .then((datos) => {
     let salida = "";
     datos.forEach(pas => {
-        salida += `<p>Nombre: ${pas.nombres}</p>`;
+        salida += `<p>Nombre: ${pas.P001.nombre}</p>`;
     });
     document.getElementById("result_pas").innerHTML = salida;
 })
@@ -23,6 +23,21 @@ fetch('empleado.json')
         salida += `<p>Nombre: ${emp.nombres}</p>`;
     });
     document.getElementById("result_emp").innerHTML = salida;
+})
+.catch((e) => {
+    alert(`Error al leer \n${e}`);
+});
+
+fetch('boleto.json')
+.then((rpta) => {
+    return rpta.json();
+})
+.then((datos) => {
+    let salida = "";
+    datos.forEach(bol => {
+        salida += `<p>Origen: ${bol.origen} <br> Pasajero: ${bol.pasajero_id}</p>`;
+    });
+    document.getElementById("result_bol").innerHTML = salida;
 })
 .catch((e) => {
     alert(`Error al leer \n${e}`);
