@@ -1,0 +1,14 @@
+[
+{
+      "numero_boleto": "A123456",
+      "fecha_emision": "2026-06-19",
+      "fecha_viaje": "2026-07-01",
+      "hora_viaje": "14:30",
+      "numero_asiento": "12B",
+      "origen": "Buenos Aires",
+      "destino": "Córdoba",
+      "valor": 15000,
+      "pasajero_id": "P001",
+      "empleado_id": "E001"  
+  }
+]
