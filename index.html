@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <title>Agencia de transporte</title>
 </head>
 <body>
+    <header>
+        <img src="micro.png" class="micro">
+    </header>
+
+    <div class="contenedor">
+        <form id="formulario">
+
+            <h2>Pasajero</h2>
+            <input type="text" id="dni" placeholder="DNI">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="apellido" placeholder="Apellido">
+            <input type="text" id="direccion" placeholder="Dirección">
+            <input type="text" id="razon" placeholder="Razón Social">
+            <input type="text" id="ruc" placeholder="RUC">
+
+            <h2>Empleado</h2>
+            <input type="text" id="dniEmpleado" placeholder="DNI">
+            <input type="text" id="nombreEmpleado" placeholder="Nombre">
+            <input type="text" id="apellidoEmpleado" placeholder="Apellido">
+        
+            <h2>Boleto</h2>
+            <input type="text" id="numero" placeholder="Número de boleto">
+            <input type="date" id="emision">
+            <input type="date" id="viaje">
+            <input type="time" id="hora">
+            <input type="text" id="asiento" placeholder="Asiento">
+            <input type="text" id="origen" placeholder="Origen">
+            <input type="text" id="destino" placeholder="Destino">
+            <input type="number" id="valor" placeholder="Valor">
+            <button type="submit">Guardar</button>
+        </form>
+
+    <!--
     <h1>Lista pasajeros</h1>
     <div id="result_pas"></div>
     <h1>Lista empleados</h1>
@@ -14,5 +47,6 @@
     <h1>Lista boletos</h1>
     <div id="result_bol"></div>
     <script src="script.js"></script>
+    -->
 </body>
 </html>
