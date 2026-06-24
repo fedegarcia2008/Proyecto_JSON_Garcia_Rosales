@@ -1,13 +1,19 @@
 [
-{
-  "P1": {
+    {
     "dni": 45871236,
     "nom": "Carlos Alberto",
     "ape": "Mendoza Ruiz",
     "dir": "Av. Los Olivos 1236",
     "razon_soc": "Comercial Andina SAC",
     "ruc": 20123456781
+  },
+    {
+    "dni": 44356734,
+    "nom": "Carlos Rodriguez",
+    "ape": "Mendoza Ruiz",
+    "dir": "Av. Los Olivos 1236",
+    "razon_soc": "Comercial Andina SAC",
+    "ruc": 20123456781
   }
 
-}
 ]

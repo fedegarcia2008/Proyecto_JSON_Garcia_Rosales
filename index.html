@@ -21,12 +21,13 @@
             <input type="text" id="direccion" placeholder="Dirección">
             <input type="text" id="razon" placeholder="Razón Social">
             <input type="text" id="ruc" placeholder="RUC">
+            <button type="reset" id="guarPas">Guardar Pasajero</button>
 
             <h2>Empleado</h2>
             <input type="text" id="dniEmpleado" placeholder="DNI">
             <input type="text" id="nombreEmpleado" placeholder="Nombre">
             <input type="text" id="apellidoEmpleado" placeholder="Apellido">
-        
+        <button type="reset" id="guarEmp">Guardar Empleado</button>
             <h2>Boleto</h2>
             <input type="text" id="numero" placeholder="Número de boleto">
             <input type="date" id="emision">
@@ -36,17 +37,25 @@
             <input type="text" id="origen" placeholder="Origen">
             <input type="text" id="destino" placeholder="Destino">
             <input type="number" id="valor" placeholder="Valor">
-            <button type="submit">Guardar</button>
+<input type="text" id="dniPasajeroBol" placeholder="DNI Pasajero">
+<input type="text" id="dniEmpleadoBol" placeholder="DNI Empleado">
+            <button type="reset" id="guarBol">Guardar Boleto</button>
         </form>
+</div>
+        <button id="mostrarPas">Mostrar Pasajero</button>
+        <h2>Registro de Pasajero</h2>
+        <div id="tablaPas"></div>
 
-    <!--
-    <h1>Lista pasajeros</h1>
-    <div id="result_pas"></div>
-    <h1>Lista empleados</h1>
-    <div id="result_emp"></div>
-    <h1>Lista boletos</h1>
-    <div id="result_bol"></div>
+        <button id="mostrarEmp">Mostrar Empleado</button>
+        <h2>Registro de Empleado</h2>
+        <div id="tablaEmp"></div>
+
+        <button id="mostrarBol">Mostrar Boletos</button>
+<h2>Registro de Boletos</h2>
+<div id="tablaBol"></div>
+
     <script src="script.js"></script>
-    -->
+
+
 </body>
 </html>
