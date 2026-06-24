@@ -216,52 +216,49 @@ document.getElementById('guarEmp').addEventListener('click', () => {
 });
 
 document.getElementById('guarBol').addEventListener('click', () => {
+
+    let dniPas = document.getElementById("dniPasajeroBol").value;
+    let dniEmp = document.getElementById("dniEmpleadoBol").value;
+
+    let pasajeroExiste = false;
+    let empleadoExiste = false;
+
+    for (let i = 0; i < pas_json.length; i++) {
+        if (pas_json[i].dni == dniPas) {
+            pasajeroExiste = true;
+        }
+    }
+
+    for (let i = 0; i < emp_json.length; i++) {
+        if (emp_json[i].dni == dniEmp) {
+            empleadoExiste = true;
+        }
+    }
+
+    if (pasajeroExiste == false) {
+        alert("El DNI del pasajero no existe");
+        return;
+    }
+
+    if (empleadoExiste == false) {
+        alert("El DNI del empleado no existe");
+        return;
+    }
+
     const boleto = {
-    numero_boleto: document.getElementById("numero").value,
-    fecha_emision: document.getElementById("emision").value,
-    fecha_viaje: document.getElementById("viaje").value,
-    hora_viaje: document.getElementById("hora").value,
-    asiento: document.getElementById("asiento").value,
-    origen: document.getElementById("origen").value,
-    destino: document.getElementById("destino").value,
-    valor: document.getElementById("valor").value,
+        numero_boleto: document.getElementById("numero").value,
+        fecha_emision: document.getElementById("emision").value,
+        fecha_viaje: document.getElementById("viaje").value,
+        hora_viaje: document.getElementById("hora").value,
+        asiento: document.getElementById("asiento").value,
+        origen: document.getElementById("origen").value,
+        destino: document.getElementById("destino").value,
+        valor: document.getElementById("valor").value,
+        dni_pasajero: dniPas,
+        dni_empleado: dniEmp
+    };
 
-    dni_pasajero: document.getElementById("dniPasajeroBol").value,
-    dni_empleado: document.getElementById("dniEmpleadoBol").value
-};
+    bol_json.push(boleto);
 
-bol_json.push(boleto);
-     
+    alert("Boleto guardado correctamente");
 });
-
-/*
-fetch('empleado.json')
-.then((rpta) => {
-    return rpta.json();
-})
-.then((datos) => {
-    let salida = "";
-    datos.forEach(emp => {
-        salida += `<p>Nombre: ${emp.nombres}</p>`;
-    });
-    document.getElementById("result_emp").innerHTML = salida;
-})
-.catch((e) => {
-    alert(`Error al leer \n${e}`);
-});
-
-fetch('boleto.json')
-.then((rpta) => {
-    return rpta.json();
-})
-.then((datos) => {
-    let salida = "";
-    datos.forEach(bol => {
-        salida += `<p>Origen: ${bol.origen} <br> Pasajero: ${bol.pasajero_id}</p>`;
-    });
-    document.getElementById("result_bol").innerHTML = salida;
-})
-.catch((e) => {
-    alert(`Error al leer \n${e}`);
-});
-*/

@@ -7,6 +7,7 @@
     <title>Agencia de transporte</title>
 </head>
 <body>
+
     <header>
         <img src="micro.png" class="micro">
     </header>
@@ -15,33 +16,40 @@
         <form id="formulario">
 
             <h2>Pasajero</h2>
-            <input type="text" id="dni" placeholder="DNI">
-            <input type="text" id="nombre" placeholder="Nombre">
-            <input type="text" id="apellido" placeholder="Apellido">
+
+            <input type="text" id="dni" placeholder="DNI *" required>
+            <input type="text" id="nombre" placeholder="Nombre *" required>
+            <input type="text" id="apellido" placeholder="Apellido *" required>
             <input type="text" id="direccion" placeholder="Dirección">
-            <input type="text" id="razon" placeholder="Razón Social">
-            <input type="text" id="ruc" placeholder="RUC">
-            <button type="reset" id="guarPas">Guardar Pasajero</button>
+            <input type="text" id="razon" placeholder="Razón Social *" required>
+            <input type="text" id="ruc" placeholder="RUC *" required>
+
+            <button type="submit" id="guarPas">Guardar Pasajero</button>
 
             <h2>Empleado</h2>
-            <input type="text" id="dniEmpleado" placeholder="DNI">
-            <input type="text" id="nombreEmpleado" placeholder="Nombre">
-            <input type="text" id="apellidoEmpleado" placeholder="Apellido">
-        <button type="reset" id="guarEmp">Guardar Empleado</button>
+            <input type="text" id="dniEmpleado" placeholder="DNI*" required>
+            <input type="text" id="nombreEmpleado" placeholder="Nombre*" required>
+            <input type="text" id="apellidoEmpleado" placeholder="Apellido*" required>
+            <button type="reset" id="guarEmp">Guardar Empleado</button>
+
             <h2>Boleto</h2>
-            <input type="text" id="numero" placeholder="Número de boleto">
-            <input type="date" id="emision">
-            <input type="date" id="viaje">
-            <input type="time" id="hora">
-            <input type="text" id="asiento" placeholder="Asiento">
-            <input type="text" id="origen" placeholder="Origen">
-            <input type="text" id="destino" placeholder="Destino">
-            <input type="number" id="valor" placeholder="Valor">
-<input type="text" id="dniPasajeroBol" placeholder="DNI Pasajero">
-<input type="text" id="dniEmpleadoBol" placeholder="DNI Empleado">
+            <input type="text" id="numero" placeholder="Número de boleto *" required>
+            <input type="date" id="emision *" required>
+            <input type="date" id="viaje *" required>
+            <input type="time" id="hora *" required>
+            <input type="text" id="asiento" placeholder="Asiento *" required>
+            <input type="text" id="origen" placeholder="Origen *" required>
+            <input type="text" id="destino" placeholder="Destino *" required>
+            <input type="number" id="valor" placeholder="Valor *" required>
+            <input type="text" id="dniPasajeroBol" placeholder="DNI Pasajero *" required>
+            <input type="text" id="dniEmpleadoBol" placeholder="DNI Empleado *" required>
             <button type="reset" id="guarBol">Guardar Boleto</button>
+
         </form>
-</div>
+    </div>
+
+    <div class="registros">
+
         <button id="mostrarPas">Mostrar Pasajero</button>
         <h2>Registro de Pasajero</h2>
         <div id="tablaPas"></div>
@@ -51,11 +59,15 @@
         <div id="tablaEmp"></div>
 
         <button id="mostrarBol">Mostrar Boletos</button>
-<h2>Registro de Boletos</h2>
-<div id="tablaBol"></div>
+        <h2>Registro de Boletos</h2>
+        <div id="tablaBol"></div>
 
+    </div>
+    <footer>
+            <img src="micro.png" alt="" class="footerimg">
+            <p class="derechos">© Todos los derechos reservados</p>
+    </footer>
     <script src="script.js"></script>
-
 
 </body>
 </html>
