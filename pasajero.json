@@ -1,19 +1,18 @@
 [
-    {
+  {
     "dni": 45871236,
     "nom": "Carlos Alberto",
-    "ape": "Mendoza Ruiz",
+    "ape": "Mendoza",
     "dir": "Av. Los Olivos 1236",
-    "razon_soc": "Comercial Andina SAC",
+    "razon_soc": "Comercial Andina SA",
     "ruc": 20123456781
   },
-    {
+  {
     "dni": 44356734,
-    "nom": "Carlos Rodriguez",
-    "ape": "Mendoza Ruiz",
-    "dir": "Av. Los Olivos 1236",
-    "razon_soc": "Comercial Andina SAC",
-    "ruc": 20123456781
+    "nom": "Juan Manuel",
+    "ape": "Sosa",
+    "dir": "Av. Mitre 286",
+    "razon_soc": "Inmobiliaria Sur SRL",
+    "ruc": 20655656563
   }
-
 ]

@@ -1,12 +1,12 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 10px 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background:#f0f0f0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -14,93 +14,93 @@ header {
     height:100px;
     width:50%;
     margin: auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px rgb(100,183,204) solid;
     border-radius: 5px;
 }
 
 .micro {
-    height:80px;
+    height: 80px;
 }
 
 .contenedor {
-    display:flex;
-    justify-content:center;
-    margin-top:30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form {
-    width:50%;
+    width: 50%;
     background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
 }
 
 form h2 {
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 input {
-    width:100%;
-    padding:10px;
-    margin-bottom:10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-    width:100%;
-    padding:10px;
+    width: 100%;
+    padding: 10px;
     background:rgb(100,183,204);
     color:white;
     border: 2px solid;
     border-radius: 10px;
-    font-size:16px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 .registros {
-    width:50%;
-    margin:30px auto;
+    width: 50%;
+    margin: 30px auto;
 }
 
 .registros h2 {
-    text-align:center;
-    margin:15px 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .registros button {
-    width:100%;
+    width: 100%;
     font-weight: bold;
 }
 
 .registros table {
-    width:100%;
+    width: 100%;
 }
 
 table {
-    width:100%;
-    margin:0 auto 30px auto;
+    width: 100%;
+    margin: 0 auto 30px auto;
     background:white;
-    border-collapse:collapse;
+    border-collapse: collapse;
 }
 
 th {
     background:rgb(235, 128, 98);
     color:white;
-    padding:10px;
+    padding: 10px;
 }
 
 td {
-    padding:10px;
-    text-align:center;
+    padding: 10px;
+    text-align: center;
 }
 
 th, td {
-    border:1px solid gray;
+    border: 1px solid gray;
 }
 
 footer {
@@ -109,8 +109,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:50%;
-    margin:30px auto;
+    width: 50%;
+    margin: 30px auto;
+    margin-bottom: 10px;
     padding: 10px;
     border: 2px rgb(100,183,204) solid;
     border-radius: 5px;

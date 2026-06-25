@@ -7,31 +7,24 @@
     <title>Agencia de transporte</title>
 </head>
 <body>
-
     <header>
         <img src="micro.png" class="micro">
     </header>
-
     <div class="contenedor">
         <form id="formulario">
-
             <h2>Pasajero</h2>
-
             <input type="text" id="dni" placeholder="DNI *" required>
             <input type="text" id="nombre" placeholder="Nombre *" required>
             <input type="text" id="apellido" placeholder="Apellido *" required>
             <input type="text" id="direccion" placeholder="Dirección">
             <input type="text" id="razon" placeholder="Razón Social *" required>
             <input type="text" id="ruc" placeholder="RUC *" required>
-
             <button type="reset" id="guarPas">Guardar Pasajero</button>
-
             <h2>Empleado</h2>
             <input type="text" id="dniEmpleado" placeholder="DNI*" required>
             <input type="text" id="nombreEmpleado" placeholder="Nombre*" required>
             <input type="text" id="apellidoEmpleado" placeholder="Apellido*" required>
             <button type="reset" id="guarEmp">Guardar Empleado</button>
-
             <h2>Boleto</h2>
             <input type="text" id="numero" placeholder="Número de boleto *" required>
             <input type="date" id="emision *" required>
@@ -44,30 +37,23 @@
             <input type="text" id="dniPasajeroBol" placeholder="DNI Pasajero *" required>
             <input type="text" id="dniEmpleadoBol" placeholder="DNI Empleado *" required>
             <button type="reset" id="guarBol">Guardar Boleto</button>
-
         </form>
     </div>
-
     <div class="registros">
-
         <button id="mostrarPas">Mostrar Pasajero</button>
         <h2>Registro de Pasajero</h2>
         <div id="tablaPas"></div>
-
         <button id="mostrarEmp">Mostrar Empleado</button>
         <h2>Registro de Empleado</h2>
         <div id="tablaEmp"></div>
-
         <button id="mostrarBol">Mostrar Boletos</button>
         <h2>Registro de Boletos</h2>
         <div id="tablaBol"></div>
-
     </div>
     <footer>
-            <img src="micro.png" alt="" class="footerimg">
-            <p class="derechos">© Todos los derechos reservados</p>
+        <img src="micro.png" alt="" class="footerimg">
+        <p class="derechos">© Todos los derechos reservados</p>
     </footer>
     <script src="script.js"></script>
-
 </body>
 </html>

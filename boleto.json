@@ -1,26 +1,26 @@
 [
     {
         "numero_boleto": "B001",
-        "fecha_emision": "2025-06-23",
-        "fecha_viaje": "2025-06-30",
+        "fecha_emision": "2026-06-23",
+        "fecha_viaje": "2026-07-19",
         "hora_viaje": "08:00",
         "asiento": "12",
-        "origen": "Lima",
-        "destino": "Arequipa",
-        "valor": 120.50,
+        "origen": "Buenos Aires",
+        "destino": "Rosario",
+        "valor": 45000,
         "dni_pasajero": "45871236",
         "dni_empleado": "48673726"
-    },
+    },   
     {
         "numero_boleto": "B002",
-        "fecha_emision": "2025-06-24",
-        "fecha_viaje": "2025-07-01",
+        "fecha_emision": "2026-05-11",
+        "fecha_viaje": "2026-10-10",
         "hora_viaje": "15:30",
         "asiento": "18",
-        "origen": "Lima",
-        "destino": "Cusco",
-        "valor": 150.00,
-                "dni_pasajero": "44356734",
+        "origen": "Córdoba",
+        "destino": "Misiones",
+        "valor": 80000,
+        "dni_pasajero": "44356734",
         "dni_empleado": "48514635"
     }
 ]
