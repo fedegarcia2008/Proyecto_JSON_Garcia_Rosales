@@ -201,18 +201,26 @@ fetch("boleto.json")
         razon: document.getElementById("razon").value,
         ruc: document.getElementById("ruc").value
     };
-pas_json.push(pasajero);
+        if (!dni.checkValidity() || !nombre.checkValidity() || !apellido.checkValidity() || !direccion.checkValidity() || !razon.checkValidity() || !ruc.checkValidity()) {
+        alert(`Complete correctamente los campos.`);
+        return;
+    }
+    pas_json.push(pasajero);
 });
 
 document.getElementById('guarEmp').addEventListener('click', () => {
-        const empleado = {
+        
+    const empleado = {
         dni: document.getElementById("dniEmpleado").value,
         nombres: document.getElementById("nombreEmpleado").value,
-        apellidos: document.getElementById("apellidoEmpleado").value,
-       
+        apellidos: document.getElementById("apellidoEmpleado").value, 
 
     };
- emp_json.push(empleado);
+        if (!dniEmpleado.checkValidity() || !nombreEmpleado.checkValidity() || !apellidoEmpleado.checkValidity()) {
+        alert(`Complete correctamente los campos.`);
+        return;
+    }
+    emp_json.push(empleado);
 });
 
 document.getElementById('guarBol').addEventListener('click', () => {
@@ -258,7 +266,12 @@ document.getElementById('guarBol').addEventListener('click', () => {
         dni_empleado: dniEmp
     };
 
+        if (!numero.checkValidity() || !emision.checkValidity() || !viaje.checkValidity() || !hora.checkValidity() || !asiento.checkValidity() || !origen.checkValidity() || !destino.checkValidity() || !valor.checkValidity() || !dniPasajeroBol.checkValidity() || !dniEmpleadoBol.checkValidity()) {
+        alert(`Complete correctamente los campos.`);
+        return;
+    }
+
     bol_json.push(boleto);
 
-    alert("Boleto guardado correctamente");
+   // alert("Boleto guardado correctamente");
 });
